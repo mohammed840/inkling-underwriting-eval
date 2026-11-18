@@ -1,0 +1,39 @@
+[
+  {
+    "tinker_id": "thinkingmachines/Inkling:peft:262144",
+    "prefill": "$1.87",
+    "cached_prefill": "$0.374",
+    "sample": "$4.68",
+    "source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json"
+  },
+  {
+    "name": "Inkling-Small (256K)",
+    "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
+    "tinker_id": "thinkingmachines/Inkling-Small:peft:262144",
+    "type": "Hybrid + Audio + Vision",
+    "arch": "MoE",
+    "size": "Large",
+    "params": 276000000000,
+    "active_params": 12000000000,
+    "context": "256K",
+    "prefill": "$0.58",
+    "cached_prefill": "$0.116",
+    "sample": "$1.44",
+    "train": "$3.47"
+  },
+  {
+    "name": "Inkling 2 Small (256K)",
+    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+    "tinker_id": "thinkingmachines/Inkling-2-Small:peft:262144",
+    "type": "Hybrid + Vision",
+    "arch": "MoE",
+    "size": "Large",
+    "params": 594000000000,
+    "active_params": 17000000000,
+    "context": "256K",
+    "prefill": "$0.30",
+    "cached_prefill": "$0.03",
+    "sample": "$1.00",
+    "train": "$3.00"
+  }
+]
