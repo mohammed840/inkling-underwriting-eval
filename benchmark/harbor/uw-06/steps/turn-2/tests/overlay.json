@@ -1,0 +1,38 @@
+{
+  "case_id": "uw-06",
+  "turn_index": 2,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "TX printed p. 5, Limits of Liability: property up to $3 million per building/structure.",
+  "source_id": "tx",
+  "prior_turns": [
+    {
+      "user": "We request $4.5 million across two association buildings. Does this exceed the stated limit?",
+      "answer_path": "/app/answers/turn-1.txt"
+    }
+  ],
+  "current_user": "Building A is $3.2 million and B is $1.3 million.",
+  "current_answer_path": "/app/answers/turn-2.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Identifies A at $3.2m as $200,000 above the limit and B at $1.3m as within it.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Does not silently reduce or redistribute requested coverage between buildings.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

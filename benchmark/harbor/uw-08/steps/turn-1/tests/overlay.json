@@ -1,0 +1,33 @@
+{
+  "case_id": "uw-08",
+  "turn_index": 1,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "MA printed p. 37, Eligibility 4(a)(4), and p. 52, Underwriting Standards A(7).",
+  "source_id": "ma",
+  "prior_turns": [],
+  "current_user": "Our Massachusetts commercial building is 70% unoccupied. Does the manual identify an issue?",
+  "current_answer_path": "/app/answers/turn-1.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Identifies 70% unoccupied as meeting the 65%-or-more threshold, with a rehabilitation exception and discretionary wording.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Credit both forms of follow-up: (1) asking about rehabilitation and schedule receipt, or (2) asking about rehabilitation and schedule submission when the answer states the Association must receive the schedule. The receipt condition can appear anywhere in the answer. In either form, fail if either follow-up topic is missing or the answer asserts sending proves receipt.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

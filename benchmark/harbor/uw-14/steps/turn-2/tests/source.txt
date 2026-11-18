@@ -1,0 +1,2 @@
+| basementEnclosureCrawlspaceType | Basement Enclosure Crawlspace Type | smallint | Basement is defined for purposes of the NFIP as any level or story which has its floor subgrade on all sides. Basement structure value are as follow: 0 - None; 1 - Finished Basement/Enclosure; 2 - Unfinished Basement/Enclosure; 3 - Crawlspace; 4 - Subgrade Crawlspace; | yes |
+| construction | Construction Indicator | boolean | Indicates whether this building is under construction. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0' | no |

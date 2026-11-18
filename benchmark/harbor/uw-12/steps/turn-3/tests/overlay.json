@@ -1,0 +1,42 @@
+{
+  "case_id": "uw-12",
+  "turn_index": 3,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "AZ Property Damage, question 5(E) and the instruction to provide details for a No answer.",
+  "source_id": "allianz",
+  "prior_turns": [
+    {
+      "user": "The proposal says the area has no history of flooding, but the broker's note records a flood there in 2022. What should we do?",
+      "answer_path": "/app/answers/turn-1.txt"
+    },
+    {
+      "user": "The broker confirms the 2022 flood. The property itself was not damaged.",
+      "answer_path": "/app/answers/turn-2.txt"
+    }
+  ],
+  "current_user": "We corrected the answer and described the event. Should we automatically decline the application?",
+  "current_answer_path": "/app/answers/turn-3.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Marks the disclosure conflict resolved without automatically declining.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Explains that the form does not provide an automatic-decline rule and applicable underwriting criteria are needed.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

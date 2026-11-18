@@ -1,0 +1,38 @@
+{
+  "case_id": "uw-04",
+  "turn_index": 2,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "TX printed p. 3, requirements (4)–(5).",
+  "source_id": "tx",
+  "prior_turns": [
+    {
+      "user": "Our condominium association has qualifying declinations, but the insured property is unoccupied and undergoing renovation. Can we proceed?",
+      "answer_path": "/app/answers/turn-1.txt"
+    }
+  ],
+  "current_user": "The property is occupied again, but renovation continues.",
+  "current_answer_path": "/app/answers/turn-2.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Clears the occupancy issue but retains the ongoing-renovation issue.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Uses the new occupancy fact without pretending renovation is complete.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

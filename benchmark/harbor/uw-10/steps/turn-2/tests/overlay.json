@@ -1,0 +1,38 @@
+{
+  "case_id": "uw-10",
+  "turn_index": 2,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "MA printed pp. 48 and 50, Inspections and Substandard Condition Notice.",
+  "source_id": "ma",
+  "prior_turns": [
+    {
+      "user": "We sent photographs of the repairs. Can those replace the initial interior inspection?",
+      "answer_path": "/app/answers/turn-1.txt"
+    }
+  ],
+  "current_user": "We can provide exterior access only; the interior will remain locked.",
+  "current_answer_path": "/app/answers/turn-2.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Recognizes that exterior-only access is insufficient for the required full access.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Directs the applicant to make the interior accessible so the inspection can be completed. A clear statement of what the applicant needs to do counts. Describing a locked interior or a future notice alone is insufficient.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

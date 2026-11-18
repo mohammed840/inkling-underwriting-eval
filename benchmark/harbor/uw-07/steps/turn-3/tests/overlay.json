@@ -1,0 +1,42 @@
+{
+  "case_id": "uw-07",
+  "turn_index": 3,
+  "mode": "interactive_harbor_step",
+  "scope": "Use only the pinned source for this fictional exercise. Accept explicitly verified case facts as stipulated. Explain assessed items and outstanding information; do not make a binding insurance decision. Cite the source section or page naturally; exact wording is not required. Follow-up requests may use equivalent reasonable clarification or verification routes; do not require a specifically named document unless the source itself does.",
+  "source_ref": "MA printed p. 37, Commercial Property Insurance, Eligibility 4(a).",
+  "source_id": "ma",
+  "prior_turns": [
+    {
+      "user": "Our company is registered in Massachusetts. Can MPIUA insure our commercial building in Rhode Island under this section?",
+      "answer_path": "/app/answers/turn-1.txt"
+    },
+    {
+      "user": "I gave you our mailing address. The actual insured building is in Worcester, Massachusetts.",
+      "answer_path": "/app/answers/turn-2.txt"
+    }
+  ],
+  "current_user": "The schedule confirms Worcester, and ownership is verified.",
+  "current_answer_path": "/app/answers/turn-3.txt",
+  "source_path": "/tests/source.txt",
+  "corpus_path": "/app/corpus.json",
+  "rubric_items": [
+    {
+      "id": "decision",
+      "criterion": "Recognizes location and insurable interest are supported by the stipulated schedule and ownership verification.",
+      "weight": 5,
+      "critical": true
+    },
+    {
+      "id": "evidence_action",
+      "criterion": "Leaves reasonable-underwriting-standard review open instead of treating these two items as complete eligibility.",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "grounding_scope",
+      "criterion": "Makes no material unsupported factual/rule claims, applies only the assigned source/program, and does not claim overall approval, binding, or verification beyond stipulated facts. Includes at least one valid bracketed section_id citation (for example [tx:p003]) from the assigned source; cited passages must actually support the material rule or definition used. Prior retrieved evidence may be reused when it still supports the current answer. Do not award credit for irrelevant citations or number of calls.",
+      "weight": 2,
+      "critical": true
+    }
+  ]
+}

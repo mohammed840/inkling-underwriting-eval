@@ -1,0 +1,6 @@
+This dataset provides details on flood insurance policy transactions. It is derived from the National Flood Insurance Program system of record, staged in the program's reporting platform and redacted to protect policy holder personally identifiable information.
+
+Is NFIP application-level data available?
+
+This information is not currently scheduled for release on OpenFEMA.
+
