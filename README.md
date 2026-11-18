@@ -42,10 +42,6 @@ uv pip install modal==1.6.4
 modal run --detach run_modal.py --model Inkling
 ```
 
-The launcher prints a trial directory. Retrieve its summary with `modal volume get inkling-underwriting-trials TRIAL_DIRECTORY/summary.json`. For local runs read `runs/full-inkling/summary.json`. Each attempt saves turns, cases and call records below its trial directory. Use a new output directory per paid run. A fresh ledger permits up to $40 in model reservations for full Inkling or $28 for a small model. Hosting is additional; the runner uses frozen cost rates.
-
-Four seeds (20261117–20261120), temperature 0.6, 256K checkpoint variant, 65,536-token candidate input cap and 8,192-token output cap. Each attempt has three user turns. LLM-as-judge Luna evaluates decision, evidence/action and grounding; every required criterion on every turn must pass in the same attempt. A case passes if any of its four attempts passes. The denominator is 15. Incomplete or ambiguous results can withhold the point estimate.
-
 ## Harbor task format
 
 After downloading, open `benchmark/harbor/uw-01/task.toml` and its three ordered steps. Each case contains an environment, manual tools and a separate verifier. Native exports use the HTTP rubric verifier configured through GRADER_URL, GRADER_MODEL and GRADER_API_KEY. Published pass@4 results use the custom Tinker BenchmarkBuilder and direct Luna verifier in the reproduction commands above. The native verifier’s mean step reward is a different metric. [Harbor multi-step task format](https://docs.harborframework.com/news/multi-step-tasks).
